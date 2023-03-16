@@ -23,4 +23,4 @@ services:
     ports:
       - 9090:80  
     volumes:
-      - /home/osboxes/ProyectoLinux:/var/www/html
+      - .:/var/www/html
