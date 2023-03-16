@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql:5.7
+    command: --default-authentication-plugin=mysql_native_password
+    container_name: basedatos
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+    ports:
+    - 23306:3306
+    volumes:
+    - ./database:/docker-entrypoint-initdb.d
+
+  pagweb:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: servidorphp
+    restart: always
+    ports:
+      - 9090:80  
+    volumes:
+      - /home/osboxes/ProyectoLinux:/var/www/html
