@@ -39,9 +39,6 @@ Ruta del DHCP para cambiar en la Virtual Machine el IPv4
           addresses: [192.168.10.10/24]
 -----------------------------------------
 En el caso que esten utilizando un máquina virtual es importante que la red deba ser un adaptador puente para que exista un PIN externo en muchos de los casos es el enp0s8 conocida como la IP de maáquina, en el caso que esten en Linux directo la IP no varia 127.0.0.1.
-## 📫 Link de proyecto en la Web
-Actualmente retire el email corporativo de Google recomiendo probar los usuarios: admin, user1, user2, user3, user4 con la contraseña: abc en todos
-- Proyecto en la Web - [https://projectesis.infinityfreeapp.com/](https://projectesis.infinityfreeapp.com/)
 ---
 ⭐️ Nota
 Es dificil encontrar código de Docker que funcione con SQL ya que la mayoria de Bases de Datos en Docker son en MongoDB y generalmente implementadas con NodeJS
