@@ -24,6 +24,7 @@ Talk to me about
 Usar el comando para que se ejecute el proyectoy funcione
 -> docker-compose up -d
 Opcional editar la información del network almenos que definamos nuestra propia IP al usar considerar el utiliza identación de 2 espacios
+
 Ruta del DHCP para cambiar en la Virtual Machine el IPv4
 /etc/netplan/00-installer-config.yaml
 
