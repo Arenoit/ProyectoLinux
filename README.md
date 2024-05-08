@@ -26,16 +26,17 @@ Usar el comando para que se ejecute el proyectoy funcione
 Opcional editar la información del network almenos que definamos nuestra propia IP al usar considerar el utiliza identación de 2 espacios
 Ruta del DHCP para cambiar en la Virtual Machine el IPv4
 /etc/netplan/00-installer-config.yaml
+
 -----------------------------------------
-network:
-  version: 2
-  renderer: networkd
-  etherets:
-    enp0s3:
-      dhcp4: true
-    enp0s8:
-      dhcp4: false
-      addresses: [192.168.10.10/24]
+    network:
+      version: 2
+      renderer: networkd
+      etherets:
+        enp0s3:
+          dhcp4: true
+        enp0s8:
+          dhcp4: false
+          addresses: [192.168.10.10/24]
 -----------------------------------------
 En el caso que esten utilizando un máquina virtual es importante que la red deba ser un adaptador puente para que exista un PIN externo en muchos de los casos es el enp0s8 conocida como la IP de maáquina, en el caso que esten en Linux directo la IP no varia 127.0.0.1.
 ## 📫 Link de proyecto en la Web
